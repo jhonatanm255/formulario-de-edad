@@ -17,9 +17,9 @@ function validarFormulario() {
 
   // Aplicar condicionales
 
-  if (edad >= 18 && edad < 65 && sexo === "masculino") {
+  if (edad >= 18 && edad <= 65 && sexo === "masculino") {
     mostrarMensaje("Eres un hombre mayor de edad.", "green");
-  } else if (edad >= 18 && edad < 65 && sexo === "femenino") {
+  } else if (edad >= 18 && edad <= 65 && sexo === "femenino") {
     mostrarMensaje("Eres una mujer mayor de edad.", "green");
   } else if (edad > 65 && sexo === "masculino") {
     mostrarMensaje("Eres un hombre de la tercera edad.", "purple");
